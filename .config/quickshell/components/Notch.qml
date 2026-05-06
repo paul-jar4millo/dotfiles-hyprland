@@ -8,8 +8,8 @@ Item {
     default required property Item item
 
     // Size will depend on the items content
-    implicitWidth: item ? item.implicitWidth + 40 : 30
-    height: 30
+    implicitWidth: item ? item.implicitWidth + 40 : 40
+    height: 40
 
     // Anchor to the top of the screens
     anchors.top: parent ? parent.top : undefined
@@ -19,7 +19,7 @@ Item {
         color: Config.primary
         opacity: Config.backgroundOpacity
 
-        radius: 15
+        radius: 20
     }
 
     onItemChanged: {

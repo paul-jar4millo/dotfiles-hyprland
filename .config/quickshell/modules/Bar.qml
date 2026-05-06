@@ -24,7 +24,7 @@ Scope {
             margins.left: 10
             margins.right: 10
 
-            implicitHeight: 30
+            implicitHeight: 40
 
             // The bar itself is transparent, but notch aren't
             color: "transparent"
@@ -47,9 +47,9 @@ Scope {
                             model: Workspaces.items
 
                             Rectangle {
-                                width: 24
-                                height: 24
-                                radius: 12
+                                width: 30
+                                height: 30
+                                radius: 15
 
                                 color: modelData === Workspaces.active ? Config.accent : Config.secondary
 
@@ -57,7 +57,8 @@ Scope {
                                     anchors.centerIn: parent
                                     text: modelData.id
                                     font.weight: Config.fontWeight
-                                    color: modelData === Workspaces.active ? Config.primary : Config.text
+                                    font.pixelSize: 14
+                                    color: modelData === Workspaces.active ? Config.primaryFg : Config.text
                                 }
 
                                 MouseArea {
@@ -81,6 +82,7 @@ Scope {
                 Notch {
                     Text {
                         font.weight: Config.fontWeight
+                        font.pixelSize: 15
                         color: Config.text
                         text: Time.time
                     }
@@ -104,8 +106,8 @@ Scope {
 
                             IconImage {
                                 source: Quickshell.iconPath(modelData.appId)
-                                width: 20
-                                height: 20
+                                width: 24
+                                height: 24
 
                                 opacity: modelData.activated ? 1.0 : 0.5
 
@@ -121,6 +123,7 @@ Scope {
                 Notch {
                     Text {
                         font.weight: Config.fontWeight
+                        font.pixelSize: 15
                         color: Config.text
                         text: Date.date
                     }

@@ -1,0 +1,6 @@
+singleton Config Config.qml
+singleton Date Date.qml
+singleton Time Time.qml
+singleton Tray Tray.qml
+singleton Windows Windows.qml
+singleton Workspaces Workspaces.qml
