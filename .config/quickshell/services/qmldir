@@ -4,3 +4,6 @@ singleton Time Time.qml
 singleton Tray Tray.qml
 singleton Windows Windows.qml
 singleton Workspaces Workspaces.qml
+singleton Volume Volume.qml
+singleton Network Network.qml
+singleton Battery Battery.qml

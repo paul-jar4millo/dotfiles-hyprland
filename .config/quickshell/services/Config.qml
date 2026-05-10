@@ -1,1 +1,1 @@
-/home/paul/.config/themes/pneuma/Config.qml
+/home/paul/.config/themes/ousia/Config.qml
